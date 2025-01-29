@@ -1,5 +1,5 @@
 import { format } from 'winston';
-import ENV from './env.config';
+import ENV from './env';
 
 const base = {
 	level: ENV.LOG_LEVEL ?? 'info',

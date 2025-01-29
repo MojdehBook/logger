@@ -1,10 +1,11 @@
 {
-	"name": "logger",
+	"name": "mb_logger",
 	"version": "1.0.0",
 	"description": "",
-	"main": "dist/logger.js",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
 	"scripts": {
-		"start": "npx tsc --build . && node dist/logger.js",
+		"start": "npx tsc --build . && node dist/index.js",
 		"dev": "nodemon src/logger.ts",
 		"build": "rm -rf dist/ && npx tsc --build .",
 		"lint": "eslint --cache --fix",
@@ -29,5 +30,6 @@
 		"dotenv": "^16.4.5",
 		"ts-node": "^10.9.2",
 		"winston": "^3.17.0"
-	}
+	},
+	"files": ["dist/**/*"]
 }

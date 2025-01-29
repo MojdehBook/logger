@@ -1,6 +1,6 @@
 import { createLogger, transports } from 'winston';
-import Env from '../config/env.config';
-import loggerConf from '../config/logger';
+import Env from './config/env';
+import loggerConf from './config/logger';
 
 const logger = createLogger(loggerConf.base);
 
