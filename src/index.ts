@@ -5,9 +5,9 @@ import loggerConf from './config/logger';
 const logger = createLogger(loggerConf.base);
 
 logger.add(new transports.File(loggerConf.transports.errToFile));
+logger.add(new transports.Console(loggerConf.transports.console));
 
 if (Env.ENV === 'production')
-	logger.add(new transports.File(loggerConf.transports.allToFile));
-else logger.add(new transports.Console(loggerConf.transports.console));
+  logger.add(new transports.File(loggerConf.transports.allToFile));
 
 export default logger;

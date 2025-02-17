@@ -8,8 +8,7 @@ const env_1 = __importDefault(require("./config/env"));
 const logger_1 = __importDefault(require("./config/logger"));
 const logger = (0, winston_1.createLogger)(logger_1.default.base);
 logger.add(new winston_1.transports.File(logger_1.default.transports.errToFile));
+logger.add(new winston_1.transports.Console(logger_1.default.transports.console));
 if (env_1.default.ENV === 'production')
     logger.add(new winston_1.transports.File(logger_1.default.transports.allToFile));
-else
-    logger.add(new winston_1.transports.Console(logger_1.default.transports.console));
 exports.default = logger;
