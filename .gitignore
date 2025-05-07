@@ -14,10 +14,6 @@ package-lock.json
 /.next/
 /out/
 
-# production
-/dist
-!dist/
-
 # misc
 .DS_Store
 *.pem
