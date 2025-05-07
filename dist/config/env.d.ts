@@ -1,5 +1,5 @@
 declare const vars: {
-    ENV: string | undefined;
+    NODE_ENV: string | undefined;
     LOG_LEVEL: string | undefined;
     NAME: string | undefined;
 };

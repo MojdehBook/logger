@@ -7,7 +7,7 @@ const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
 const env = process.env;
 const vars = {
-    ENV: env.ENV,
+    NODE_ENV: env.NODE_ENV,
     LOG_LEVEL: env.LOG_LEVEL,
     NAME: env.NAME,
 };
